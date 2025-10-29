@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Course Curriculum — HTML Elements Demo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; margin: 24px; color: #222; }
+    header { border-bottom: 2px solid #eee; padding-bottom: 12px; margin-bottom: 18px; }
+    section { margin-bottom: 20px; }
+    code.sample { background:#f4f4f4; padding:2px 6px; border-radius:4px; font-family:monospace; }
+    .demo { background:#fafafa; padding:12px; border:1px dashed #ddd; border-radius:6px; }
+    dl dt { font-weight: bold; margin-top:8px; }
+    dl dd { margin: 0 0 8px 18px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Course Curriculum — HTML Elements Demo</h1>
+    <p>An example web page showing how to use headings, paragraphs, bold/italic/underline, special characters, and several list types.</p>
+  </header>
+
+  <!-- HEADINGS -->
+  <section>
+    <h2>Headings</h2>
+    <div class="demo">
+      <h1>Heading level 1 (&lt;h1&gt;)</h1>
+      <h2>Heading level 2 (&lt;h2&gt;)</h2>
+      <h3>Heading level 3 (&lt;h3&gt;)</h3>
+      <h4>Heading level 4 (&lt;h4&gt;)</h4>
+      <h5>Heading level 5 (&lt;h5&gt;)</h5>
+      <h6>Heading level 6 (&lt;h6&gt;)</h6>
+    </div>
+  </section>
+
+  <!-- PARAGRAPHS AND TEXT STYLES -->
+  <section>
+    <h2>Paragraphs & Text Styles</h2>
+    <div class="demo">
+      <p>
+        This is a normal paragraph introducing the course. Use paragraphs to separate blocks of text.
+      </p>
+
+      <p>
+        Emphasis and importance:
+        <strong>strong (bold)</strong>,
+        <b>bold using &lt;b&gt;</b>,
+        <em>emphasis (italic)</em>,
+        <i>italic using &lt;i&gt;</i>,
+        <u>underlined text (&lt;u&gt;)</u>.
+      </p>
+
+      <p>
+        Mixed inline formatting example:
+        <strong>Important:</strong> Please read the <em>requirements</em>, and <u>do not</u> forget to sign the form.
+      </p>
+    </div>
+  </section>
+
+  <!-- SPECIAL CHARACTERS -->
+  <section>
+    <h2>Special Characters (HTML Entities)</h2>
+    <div class="demo">
+      <p>Some common HTML entities:</p>
+      <ul>
+        <li>&amp;  — ampersand (write <code class="sample">&amp;amp;</code>)</li>
+        <li>&lt;  — less-than (write <code class="sample">&amp;lt;</code>)</li>
+        <li>&gt;  — greater-than (write <code class="sample">&amp;gt;</code>)</li>
+        <li>&copy;  — copyright (write <code class="sample">&amp;copy;</code>)</li>
+        <li>&reg;  — registered (write <code class="sample">&amp;reg;</code>)</li>
+        <li>&euro; — euro sign (write <code class="sample">&amp;euro;</code>)</li>
+        <li>&#9731; — numeric entity (snowflake symbol)</li>
+        <li>&ndash; &mdash; en-dash and em-dash</li>
+      </ul>
+      <p>Example sentence with special characters: &copy; 2025 ACME Learning &nbsp; &middot; &euro; 49 &ndash; limited offer.</p>
+    </div>
+  </section>
+
+  <!-- ORDERED LIST -->
+  <section>
+    <h2>Ordered List (Sequence)</h2>
+    <div class="demo">
+      <p>Typical course module order:</p>
+      <ol>
+        <li>Introduction to the subject</li>
+        <li>Core concepts
+          <ol>
+            <li>Concept A</li>
+            <li>Concept B</li>
+          </ol>
+        </li>
+        <li>Practical labs</li>
+        <li>Assessment &amp; feedback</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- UNORDERED LIST -->
+  <section>
+    <h2>Unordered List (Bullets)</h2>
+    <div class="demo">
+      <p>Course features:</p>
+      <ul>
+        <li>Video lectures</li>
+        <li>Hands-on exercises
+          <ul>
+            <li>Guided exercises</li>
+            <li>Challenge tasks</li>
+          </ul>
+        </li>
+        <li>Weekly quizzes</li>
+        <li>Community forum</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- DESCRIPTION LIST -->
+  <section>
+    <h2>Description List (Term & Definition)</h2>
+    <div class="demo">
+      <p>Key terms used in the course:</p>
+      <dl>
+        <dt>Syllabus</dt>
+        <dd>The outline of topics and schedule for the course.</dd>
+
+        <dt>Prerequisite</dt>
+        <dd>Knowledge or skills students should have before joining.</dd>
+
+        <dt>Assessment</dt>
+        <dd>Methods used to evaluate student progress (quizzes, projects, exams).</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- NESTED LIST -->
+  <section>
+    <h2>Nested Lists</h2>
+    <div class="demo">
+      <p>Example of deep nesting (mixing ordered and unordered):</p>
+      <ol>
+        <li>Week 1
+          <ul>
+            <li>Lecture: Introduction</li>
+            <li>Lab:
+              <ol>
+                <li>Setup environment</li>
+                <li>First hands-on task</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+        <li>Week 2
+          <ul>
+            <li>Lecture: Advanced topics</li>
+            <li>Assignment: Project proposal</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- MIXED LISTS -->
+  <section>
+    <h2>Mixed Lists</h2>
+    <div class="demo">
+      <p>Combining different list types in one structure:</p>
+
+      <ul>
+        <li>Module A
+          <ol>
+            <li>Topic A1</li>
+            <li>Topic A2</li>
+          </ol>
+        </li>
+        <li>Module B
+          <dl>
+            <dt>Topic B1</dt>
+            <dd>Short description of B1</dd>
+            <dt>Topic B2</dt>
+            <dd>Short description of B2</dd>
+          </dl>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+  <footer>
+    <p style="font-size:0.95em; color:#555; margin-top:30px;">
+      Example created for learning HTML basics — headings, paragraphs, text styles, special characters and list types.
+    </p>
+  </footer>
+
+</body>
+</html>
